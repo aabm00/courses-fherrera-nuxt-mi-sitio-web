@@ -1,7 +1,10 @@
+import { NuxtLayout } from '../.nuxt/components';
 <template>
   <div>
-    <MainNavigation />
-    <NuxtPage />
+    <NuxtLayout>
+      <!-- <MainNavigation /> -->
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
 
