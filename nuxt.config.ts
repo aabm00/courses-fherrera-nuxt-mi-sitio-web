@@ -5,6 +5,18 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  app: {
+    head: {
+      title: 'Mi tienda de servicios',
+      meta: [
+        { 
+          name: 'description', 
+          content: 'Una tienda de servicios para tus necesidades' 
+        },
+      ],
+    }
+  },
+
   modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/icon', '@nuxt/image'],
 
   // SPA - Single Page Application
