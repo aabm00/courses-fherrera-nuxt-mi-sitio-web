@@ -25,4 +25,15 @@ export default defineNuxtConfig({
   //   preset: 'static',
   //   static: true,
   // },
+
+  // Prerendering - todo el sitio
+  nitro: {
+    prerender: {
+      routes: ['/', '/about', '/contact', '/pricing', '/products'],
+      ignore: ['/dashboard', '/dashboard/**'],
+      // Habilitar el rastreo de enlaces para descubrir rutas adicionales
+      crawlLinks: true,
+    }
+  }
+
 });
